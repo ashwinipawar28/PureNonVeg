@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nonVegApp">
+<head>
+  <meta charset="utf-8">
+  <title>Pure Non Veg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+	<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="css/style-sldr.css" />
+<script type="text/javascript" src="../app/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="../app/js/modernizr.custom.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+
+</style>
+	
+</head>
+
+<body>
+<div class="wrapper" id="nonVeg" ng-controller="nonVegController">
+	<header>
+    	<div class="container">
+  			<div class="row">
+            	<div class="col-lg-6 col-sm-6 col-xs-6">
+                	<div class="logo-txt">
+                     	<a href="#"><img src="img/logo.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6">
+                	
+                     <nav class="menu-opener">
+                        <div class="menu-opener-inner"></div>
+                      </nav>
+                      <nav class="menu">
+                        <ul class="menu-inner1">
+                      		
+                          <a href="#" class="col-lg-3">
+                            <li class="active1">Home</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Order</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Sign Up</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Sign In</li>
+                          </a>
+                         </ul>
+                      </nav>
+                </div>
+            </div>
+ 		</div>
+    </header>
+    <div class="slidr-sec" >
+    	<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="img/1920Cate_1008.jpg" alt="bg" title="Order this prawns fried rice in the background!" id="wows1_0"/></li>
+		<li><img src="img/1920Cate_1015.jpg" alt="simple jquery slider" title="Order this prawns fried rice in the background!" id="wows1_1"/></li>
+		<li><img src="img/bibimbap-recipe.jpg" alt="540x1920" title="Order this prawns fried rice in the background!" id="wows1_2"/></li><p>abbbbb</p>
+	</ul></div>
+</div>	
+
+    </div>
+    <div class="container">
+  	<div class="order-wrap">
+        <div class="container">
+            <div class="row">
+              	<div class="col-lg-6 col-sm-6 z-in">
+                	<div class="order-contain">
+    				<div class="first-txt">
+        				<h1>Order food online in Pune</h1>
+        			</div>
+                    <form>
+                    <textarea id="search-area" id="Autocomplete" ng-autocomplete="result1" details="details1" options="options1" placeholder="Type your delivery address (building name, landmark,road or area)"></textarea>
+                   <input type="image" alt="Submit" src="img/search.png" ng-click="restaurantsList()"/>
+                    </form>
+                  </div>
+                  
+                </div> 
+                <div class="col-lg-6 col-sm-6">
+                	 <input type="submit" value="YAYYY!" />
+                  </div>       
+       		 </div>
+        </div>
+    </div>
+    </div>
+    
+    
+ <a href="#innr-con">
+    <div class="discover-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 ">
+                	<div class="div-wid">
+                	<div class="arr-img"></div><p >Discover what all we are offering</p><div class="arr-img1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </a>
+ <div class="innr-con" id="innr-con">
+ <a href="#" class="off-a">
+    <div class="offer-sec" id="offer-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12">
+                <div class="off-view-1">
+                	<img src="img/Offers.png" alt="" />
+                </div>
+                <div class="off-view-2">
+                    <img src="img/Offers1.png" alt="" />
+                </div>
+                  
+                    <P>click anywhere in this section to avail exciting offers!</P>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a> 
+
+  <a href="#" class="lazy-a">
+   	 <div class="lazy-bones-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 ">
+                	<div class="lazy-view-1">
+                		<img src="img/Lazy_Bones.png" alt="" />
+                    </div>
+                    <div class="lazy-view-2">
+                    	<img src="img/Lazy_Bones1.png" alt="" />
+                    </div>
+                   
+                    <p>Specially designed section for all the lazy bums out there...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
+   <a href="#" class="con-a">  
+   	 <div class="confused-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 ">
+                	<div class="con-view-1">
+                		<img src="img/confused.png" alt="" />
+                    </div>
+                    <div class="con-view-2">
+                		<img src="img/confused1.png" alt="" />
+                    </div>
+                    
+                    <p>that awkward moment when you have no idea what to eat. just click here!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </a>
+   <a href="#" class="cate-a">
+     <div class="cate-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12">
+                	<div class="cat-view-1">
+                		<img src="img/categories.png" alt="" />
+                    </div>
+                    <div class="cat-view-2">
+                		<img src="img/categories1.png" alt="" />
+                    </div>
+                   	
+                    <p>Okay just show me what you got in store</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </a>
+
+    <div class="footer-menu-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 ">
+                	<div class="ft-menu">
+                     
+                        <a href="#">HOW TO ORDER </a>
+                        <a href="#">VERIFY ORDER </a>
+                        <a href="#">TRACK ORDER </a>
+                        <a href="#"> FAQS</a>
+                        <a href="#">CUSTOMER CARE</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="social-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 ">
+                	 <div class="social" >
+                     		<h1>Let's be Friends</h1>
+                         	
+                                <a href="http://facebook.com" class="icon-button facebook"><div class="add-facebook"></div><span></span></a>
+  <a href="http://twitter.com/minimalmonkey" class="icon-button twitter"><div class="add-twitter"></div><span></span></a>
+  <a href="#" class="icon-button google-plus"><div class="add-insta"></div><span></span></a>
+<a href="http://plus.google.com" class="icon-button google-plus"><div class="add-gplus"></div><span></span></a>
+<a href="http://plus.google.com" class="icon-button google-plus"><div class="add-linked-in"></div><span></span></a>
+
+<a href="http://plus.google.com" class="icon-button google-plus"><div class="add-pintrest"></div><span></span></a>
+
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div> 
+ <div class="footer-links-sec">
+    	<div class="container">
+        	<div class="row">            	
+                <div class="ft-link">
+                     <div class="col-lg-3 col-sm-3">
+                        <h1>Pure Non Veg</h1>
+                        <a href="#"> About Us</a>
+ 						<a href="#">Team Careers  Blog</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Blog</a>
+						<a href="#">Sitemap</a>
+                     
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                    <h1>POPULAR CUISINES</h1>
+                         <a href="#">  Indian Restaurants</a>
+                          <a href="#"> Chinese Restaurants</a>
+                         <a href="#"> Pizza Restaurants</a>
+                          <a href="#"> Cake Delivery</a>
+                           <a href="#"> Italian Restaurants</a>                         
+                          <a href="#">Mexican Restaurants</a>                          
+                         <a href="#"> Punjabi Restaurants</a>                          
+                          <a href="#">Fast Food Restaurants</a>
+                   
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                    <h1>POPULAR delivery locations</h1>
+                     <a href="#"> Domino's Pizza</a>
+                     <a href="#"> Eatsome</a>
+                     <a href="#"> Mast Kalandar </a>
+                     <a href="#"> Subway</a>
+                     <a href="#"> Pizza Corner</a>          
+                     <a href="#"> Mad Over Donuts </a>                     
+                     <a href="#"> Mainland China</a>
+                     <a href="#"> Baskin Robbins </a>                    
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                    <h1>POPULAR RESTAURANTS</h1>
+                       <a href="#">Domino's Pizza </a>
+                       <a href="#">Eatsome</a>
+                       <a href="#"> Mast Kalandar</a> 
+                        <a href="#">Subway </a>                      
+                        <a href="#">Pizza Corner</a>                        
+                        <a href="#">Mad Over Donuts</a>                        
+                        <a href="#">Mainland China</a>                        
+                        <a href="#">Baskin Robbins</a>                 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="copyright-sec">
+    	<div class="container">
+        	<div class="row"> 
+               <div class="col-lg-10 col-sm-10">
+               <p>© 2015 : purenonveg.com : all rights reserved : crafted and marketed by <a href="http://infinistaconcepts.com/">infinista concepts</a></p>
+               </div>
+                <div class="col-lg-2 col-sm-2">
+                <a href="#"><span>Privacy</span></a>&nbsp;  &nbsp;  . &nbsp;  &nbsp;
+                 <a href="#"><span> Terms</span></a>
+               </div>
+            </div>
+        </div>
+     </div>
+    
+</div>
+ 
+</div>
+<script type="text/javascript" src="../app/js/jquery.min.js"></script>
+<script type="text/javascript" src="../app/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../app/js/wowslider.js"></script>
+<script type="text/javascript" src="../app/js/script.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular/js/1.0.8/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="../app/app.js"></script>
+<script src="../app/js/ngAutocomplete.js"></script>
+<script src="menu-opener.js"></script>
+  <script>
+  
+ 
+  
+  $(".menu-opener").click(function(){
+  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+});
+
+  </script>
+<!--<script src="../app/js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+				});
+			});
+		</script>-->
+        <script>
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	   $('html, body').stop().animate({
+     		'scrollTop': $target.offset().top
+		}, 900, 'swing');
+});
+});
+</script>
+
+</body>
+</html>

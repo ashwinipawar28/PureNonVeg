@@ -7,10 +7,10 @@ function getDB()
 {
     $dbhost = "localhost";
     $dbuser = "root";
-    $dbpass = "dvector2";
+    $dbpass = "";
     $dbname = "nonveg";
 
-    $mysql_conn_string = "mysql:host=$dbhost;dbname=$dbname";
+    $mysql_conn_string = "mysql:host=$dbhost;port=3307;dbname=$dbname";
     $dbConnection = new PDO($mysql_conn_string, $dbuser, $dbpass);
     $dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $dbConnection;

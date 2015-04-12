@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nonVegApp">
+<head>
+  <meta charset="utf-8">
+  <title>Pure Non Veg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+   
+   <link href="css/bootstrap-select.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+	<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="css/style-sldr.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+		
+<!-- End WOWSlider.com HEAD section -->
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+
+</style>
+<style>
+
+    </style>
+    
+</head>
+
+<body>
+<div class="wrapper" ng-controller="nonVegController">
+	<header>
+    	<div class="container">
+  			<div class="row">
+            	<div class="col-lg-6 col-sm-6 col-xs-6">
+                	<div class="logo-txt">
+                     	<a href="index.html"><img src="img/logo.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6">
+                	
+                     <nav class="menu-opener">
+                        <div class="menu-opener-inner"></div>
+                      </nav>
+                      <nav class="menu">
+                        <ul class="menu-inner1">
+                      		
+                          <a href="index.html" class="col-lg-3">
+                            <li class="active1">Home</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Order</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Sign Up</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Sign In</li>
+                          </a>
+                         </ul>
+                      </nav>
+                </div>
+            </div>
+ 		</div>
+    </header>
+    
+    <div class="restu-sec">
+    	<div class="container">
+        	<div class="row">
+        	<div class="col-lg-12">
+            	<div class="rest-head">
+            	<h1>Delivery Restaurants in Baner</h1>
+                <a href="#" class="loc">Change Location</a>
+                </div>
+                <div class="select-con">
+                	<div class="sort-by-div">
+                	     <select class="selectpicker" id="sort-by">
+                            <option disabled="disabled" selected="selected" style="display:none">Sort By</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div> 
+                    <div class="location-div">
+                	     <select class="selectpicker" id="location">
+                            <option  disabled="disabled" selected="selected" style="display:none">Location</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div> 
+                     
+                     <div class="Cuisine-div">
+                	     <select class="selectpicker" id="Cuisine">
+                            <option  disabled="disabled" selected="selected" style="display:none">Cuisine</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                             <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div>  
+                     <div class="Establishment-div">
+                	     <select class="selectpicker" id="establishmentType">
+                            <option  disabled="disabled" selected="selected" style="display:none">Establishment Type</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div>   
+                     <div class="Cost-for-two-div">
+                	     <select class="selectpicker" id="Cost-for-two">
+                            <option  disabled="disabled" selected="selected" style="display:none">Cost for two</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div>
+                    <div class="Category-div">
+                	     <select class="selectpicker" id="Category">
+                            <option  disabled="disabled" selected="selected" style="display:none">Category</option>
+                            <option>Category1</option>
+                            <option>Category2</option>
+                             <option>Category1</option>
+                            <option>Category2</option>
+                             <option>Category1</option>
+                            <option>Category2</option>
+                         </select>
+                    </div>
+                     <div class="Restaurant-Offers-div">
+                	     <select class="selectpicker" id="Category">
+                            <option  disabled="disabled" selected="selected" style="display:none">Restaurant Offers</option>
+                            <option>Restaurant Offers1</option>
+                            <option>Restaurant Offers2</option>
+                         </select>
+                    </div>
+                     <div class="More-Filters-div">
+                	     <select class="selectpicker" id="Category">
+                            <option  disabled="disabled" selected="selected" style="display:none">More Filters</option>
+                            <option>More Filters1</option>
+                            <option>More Filters2</option>
+                             <option>More Filters1</option>
+                            <option>More Filters2</option>
+                         </select>
+                    </div>
+                </div>
+                <div class="select-con-resp">
+                    <button type="button" class="btn" data-toggle="collapse" data-target="#demo">Filter</button>
+                    <div id="demo" class="collapse in">
+                     <div class="mar-top">
+                	<div class="sort-by-div">
+                	     <select class="selectpicker" id="sort-by">
+                            <option disabled="disabled" selected="selected" style="display:none">Sort By</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div> 
+                    <div class="location-div">
+                	     <select class="selectpicker" id="location">
+                            <option  disabled="disabled" selected="selected" style="display:none">Location</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div> 
+                     
+                     <div class="Cuisine-div">
+                	     <select class="selectpicker" id="Cuisine">
+                            <option  disabled="disabled" selected="selected" style="display:none">Cuisine</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                             <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div>  
+                     <div class="Establishment-div">
+                	     <select class="selectpicker" id="establishmentType">
+                            <option  disabled="disabled" selected="selected" style="display:none">Establishment Type</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div>   
+                     <div class="Cost-for-two-div">
+                	     <select class="selectpicker" id="Cost-for-two">
+                            <option  disabled="disabled" selected="selected" style="display:none">Cost for two</option>
+                            <option>Sort By</option>
+                            <option>Sort By2</option>
+                         </select>
+                    </div>
+                    <div class="Category-div">
+                	     <select class="selectpicker" id="Category">
+                            <option  disabled="disabled" selected="selected" style="display:none">Category</option>
+                            <option>Category1</option>
+                            <option>Category2</option>
+                             <option>Category1</option>
+                            <option>Category2</option>
+                             <option>Category1</option>
+                            <option>Category2</option>
+                         </select>
+                    </div>
+                     <div class="Restaurant-Offers-div">
+                	     <select class="selectpicker" id="Category">
+                            <option  disabled="disabled" selected="selected" style="display:none">Restaurant Offers</option>
+                            <option>Restaurant Offers1</option>
+                            <option>Restaurant Offers2</option>
+                         </select>
+                    </div>
+                     <div class="More-Filters-div">
+                	     <select class="selectpicker" id="Category">
+                            <option  disabled="disabled" selected="selected" style="display:none">More Filters</option>
+                            <option>More Filters1</option>
+                            <option>More Filters2</option>
+                             <option>More Filters1</option>
+                            <option>More Filters2</option>
+                         </select>
+                    </div>
+                </div>
+                    </div>
+      			</div>
+                
+            </div>
+            </div>
+            <div class="rest-content">
+            <div class="row">
+            	<div class="col-lg-4">
+                	<div class="google_map_sh" id="googleMap">
+                    </div>
+                </div>
+                <input type="hidden" id="searchText" ng-model="searchText">
+                <div class="col-lg-8 bor-both">
+                    <div class="rest-list-div" id="custom_scroll">
+                      <div class="rest-link" ng-repeat="restaurant in restaurants | filter: search">
+                		<div class="col-lg-9 col-sm-9">                        	
+                        	<a href="#"><img src={{restaurant.image_name}} alt="" /></a>
+                            
+                            <a href="#"><h2>{{restaurant.name}}</h2></a>
+                            <p class="a3"><a href="#">{{restaurant.speciality}}</a></p>
+                            <p><a href="#">Baner: </a>{{restaurant.address}}</p>
+                            <p><a href="#">Cafe: </a>{{restaurant.cuisine}}</p>
+                      	</div>
+                        <div class="col-lg-3 col-sm-3">
+                        	<a href="#" class="a4">
+                        	<div class="review-div">
+                              <span>{{restaurant.ratings}}</span>
+                              <p>{{restaurant.reviews}}</p>
+                            </div>
+                            </a>
+                            <div class="menu-photo">
+                            	<span><a href="#" class="a1">Menu</a></span>
+                            	<span><a href="#" class="a2">{{restaurant.photos}}</a></span>
+                            </div>
+                        </div>
+                     </div> 
+                     <!--  <div class="rest-link">
+                		<div class="col-lg-9 col-sm-9">                        	
+                        	<a href="#"><img src="img/rest-2.png" alt="" /></a>
+                            
+                            <a href="#"><h2>Hotel Green Park</h2></a>
+                            <p class="a3"><a href="#">Veggie Friendly</a></p>
+                            <p><a href="#">Baner:</a> Hotel Greenpark, 14/B/2, Baner, Pune</p>
+                            <p><a href="#">Casual Dining:</a> North Indian, Chinese, Continental, Thai, Mexican</p>
+                      	</div>
+                        <div class="col-lg-3 col-sm-3">
+                        	<a href="#" class="a4">
+                        	<div class="review-div">
+                              <span>4.0</span>
+                              <p>24 Reviews</p>
+                            </div>
+                            </a>
+                            <div class="menu-photo">
+                            	<span><a href="#" class="a1">Menu</a></span>
+                            	<span><a href="#" class="a2">50 Photos</a></span>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="rest-link">
+                		<div class="col-lg-9 col-sm-9">                        	
+                        	<a href="#"><img src="img/rest3.png" alt="" /></a>
+                            
+                            <a href="#"><h2>Malaka Spice</h2></a>
+                            <p class="a3"><a href="#">Pan-Asian Delicacies</a></p>
+                            <p><a href="#">Baner:</a> 1st Floor, Atria Building, Off Baner Road, Pune</p>
+                            <p><a href="#">Cafe:</a> Malaysian, Vietnamese, Indonesian, Thai, Chinese, Asian, As...</p>
+                      	</div>
+                        <div class="col-lg-3 col-sm-3">
+                        	<a href="#" class="a4">
+                        	<div class="review-div">
+                              <span>4.0</span>
+                              <p>24 Reviews</p>
+                            </div>
+                            </a>
+                            <div class="menu-photo">
+                            	<span><a href="#" class="a1">Menu</a></span>
+                            	<span><a href="#" class="a2">50 Photos</a></span>
+                            </div>
+                        </div>
+                     </div>
+                     
+                     <div class="rest-link">
+                		<div class="col-lg-9 col-sm-9">                        	
+                        	<a href="#"><img src="img/rest4.png" alt="" /></a>
+                            
+                            <a href="#"><h2>Post 91 - Infinity Rooftop Restaurant</h2></a>
+                            <p class="a3"><a href="#">Rooftops</a></p>
+                            <p><a href="#">Baner:</a> Level 9, Icon Tower, Baner, Pune</p>
+                            <p><a href="#">Cafe:</a> North Indian, Chinese, Italian, Continental</p>
+                      	</div>
+                        <div class="col-lg-3 col-sm-3">
+                          <a href="#" class="a4">
+                        	<div class="review-div">
+                              <span>4.0</span>
+                              <p>24 Reviews</p>
+                            </div>
+                           </a>
+                            <div class="menu-photo">
+                            	<span><a href="#" class="a1">Menu</a></span>
+                            	<span><a href="#" class="a2">50 Photos</a></span>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="rest-link">
+                		<div class="col-lg-9 col-sm-9">                        	
+                        	<a href="#"><img src="img/rest5.png" alt="" /></a>
+                            
+                            <a href="#"><h2>Replay Sports Bar</h2></a>
+                            <p class="a3"><a href="#">Beer in a Bar</a></p>
+                            <p><a href="#">Baner:</a> Shop 1-2, Primrose Mall, Near Balewadi Phata, Baner</p>
+                            <p><a href="#">Cafe:</a> North Indian, Finger Food, Chinese, Kashmiri, Continental</p>
+                      	</div>
+                        <div class="col-lg-3 col-sm-3">
+                        <a href="#" class="a4">
+                        	<div class="review-div">
+                              <span>4.0</span>
+                              <p>24 Reviews</p>
+                            </div>
+                        </a>   
+                         
+                            <div class="menu-photo">
+                            	<span><a href="#" class="a1">Menu</a></span>
+                            	<span><a href="#" class="a2">50 Photos</a></span>
+                            </div>
+                        </div>
+                     </div> -->
+                </div>
+               </div>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+   
+    
+    
+ 
+
+ 	<div class="how-to-order">
+    	<div class="container">
+        	<div class="order-links">
+            	<ul><li><a href="#">HOW TO ORDER </a></li>
+                	<li><a href="#">VERIFY ORDER </a></li>
+                    <li><a href="#">TRACK ORDER </a></li>
+                    <li><a href="#">FAQS </a></li>
+                    <li><a href="#">CUSTOMER CARE</a></li>
+                </ul>    
+                	
+            </div>
+        </div>
+    </div>
+    <div class="social-sec">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-12 ">
+                	 <div class="social" >
+                     		<h1>Let's be Friends</h1>
+                         	
+                                <a href="http://facebook.com" class="icon-button facebook"><div class="add-facebook"></div><span></span></a>
+  <a href="http://twitter.com/minimalmonkey" class="icon-button twitter"><div class="add-twitter"></div><span></span></a>
+  <a href="#" class="icon-button google-plus"><div class="add-insta"></div><span></span></a>
+<a href="http://plus.google.com" class="icon-button google-plus"><div class="add-gplus"></div><span></span></a>
+<a href="http://plus.google.com" class="icon-button google-plus"><div class="add-linked-in"></div><span></span></a>
+
+<a href="http://plus.google.com" class="icon-button google-plus"><div class="add-pintrest"></div><span></span></a>
+
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="footer-links-sec">
+    	<div class="container">
+        	<div class="row">            	
+                <div class="ft-link">
+                     <div class="col-lg-3 col-sm-3">
+                        <h1>Pure Non Veg</h1>
+                        <a href="#"> About Us</a>
+ 						<a href="#">Team Careers  Blog</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Blog</a>
+						<a href="#">Sitemap</a>
+                     
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                    <h1>POPULAR CUISINES</h1>
+                         <a href="#">  Indian Restaurants</a>
+                          <a href="#"> Chinese Restaurants</a>
+                         <a href="#"> Pizza Restaurants</a>
+                          <a href="#"> Cake Delivery</a>
+                           <a href="#"> Italian Restaurants</a>                         
+                          <a href="#">Mexican Restaurants</a>                          
+                         <a href="#"> Punjabi Restaurants</a>                          
+                          <a href="#">Fast Food Restaurants</a>
+                   
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                    <h1>POPULAR delivery locations</h1>
+                     <a href="#"> Domino's Pizza</a>
+                     <a href="#"> Eatsome</a>
+                     <a href="#"> Mast Kalandar </a>
+                     <a href="#"> Subway</a>
+                     <a href="#"> Pizza Corner</a>          
+                     <a href="#"> Mad Over Donuts </a>                     
+                     <a href="#"> Mainland China</a>
+                     <a href="#"> Baskin Robbins </a>                    
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                    <h1>POPULAR RESTAURANTS</h1>
+                       <a href="#">Domino's Pizza </a>
+                       <a href="#">Eatsome</a>
+                       <a href="#"> Mast Kalandar</a> 
+                        <a href="#">Subway </a>                      
+                        <a href="#">Pizza Corner</a>                        
+                        <a href="#">Mad Over Donuts</a>                        
+                        <a href="#">Mainland China</a>                        
+                        <a href="#">Baskin Robbins</a>                 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="copyright-sec">
+    	<div class="container">
+        	<div class="row"> 
+               <div class="col-lg-10 col-sm-10">
+               <p>© 2015 : purenonveg.com : all rights reserved : crafted and marketed by <a href="http://infinistaconcepts.com/">infinista concepts</a></p>
+               </div>
+                <div class="col-lg-2 col-sm-2">
+                <a href="#"><span>Privacy</span></a>&nbsp;  &nbsp;  . &nbsp;  &nbsp;
+                 <a href="#"><span> Terms</span></a>
+               </div>
+            </div>
+        </div>
+     </div>
+    
+</div>
+ 
+</div>
+<script src="../app/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="../app/js/jquery.js"></script>
+<script type="text/javascript" src="../app/js/jquery.min.js"></script>
+<script type="text/javascript" src="../app/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../app/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="../app/js/wowslider.js"></script>
+<script type="text/javascript" src="../app/js/script.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js"></script>
+<script src="../app/app.js"></script>
+<script src="../app/js/ngAutocomplete.js"></script>
+<script type="text/javascript" src="../app/js/jquery.nicescroll.min.js"></script>
+
+<script src="../app/js/menu-opener.js"></script>
+<script type="text/javascript">
+
+$(document).ready(
+
+  function() { 
+
+    $("#custom_scroll").niceScroll();
+    $("#searchText").val(localStorage.getItem("searchText"))
+
+  }
+
+);
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false">
+</script>
+<script>
+
+var myCenter=new google.maps.LatLng(19.073843,72.999285);
+
+function initialize()
+{
+var mapProp = {
+  	center:myCenter,
+    zoom:16,
+ 	scrollwheel: false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+ 
+ 
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Neoalta Seciality Clinic</h3>'+
+      '<div id="bodyContent">'+
+	  '<p><p>'+
+	  '<p><p>'+
+	  '<p><a href="http://maps.google.com/maps?saddr=&daddr=19.073843,72.999285" target="_blank">Get Direction</a></p>'
+	  '</div>'+
+      '</div>';
+
+
+  var infowindow = new google.maps.InfoWindow({
+  content: contentString
+  });
+ 
+			var marker=new google.maps.Marker({
+			position:myCenter,
+			icon:'<?php bloginfo("template_url");?>/images/yellow-dot.png',
+		   animation:google.maps.Animation.BOUNCE
+});
+
+
+ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+marker.setMap(map);
+
+ google.maps.event.addDomListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+
+});
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  <script>
+  $(".menu-opener").click(function(){
+  $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
+});
+
+  </script>
+<!--<script src="js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+				});
+			});
+		</script>-->
+        <script>
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	   $('html, body').stop().animate({
+     		'scrollTop': $target.offset().top
+		}, 900, 'swing');
+});
+});
+</script>
+
+</body>
+</html>
