@@ -1,25 +1,4 @@
   app.controller("nonVegController",function ($scope, $http, LocationService) {
-    $scope.result1 = '';
-    $scope.options1 = null;
-    $scope.details1 = '';
-
-
-
-    $scope.result2 = '';
-    $scope.options2 = {
-      country: 'ca',
-      types: '(cities)'
-    };    $scope.details2 = '';
-    
-    
-    
-    $scope.result3 = '';
-    $scope.options3 = {
-      country: 'gb',
-      types: 'establishment'
-    };
-    $scope.details3 = '';
-    
     $scope.restaurantsList =  function() {
     	if ($("#search-area").val().trim() != "")
     	window.location.href = "restaurants.html";
@@ -41,6 +20,13 @@
       
     $("#search-area").on('keyup', function(){
     	if (event.keyCode == 13) {
+    		localStorage.clear();
+    		if (this.value.indexOf(",") < 0) {
+    			localStorage.setItem("searchtext", this.value);
+    		} else {
+    			localStorage.setItem("searchtext", this.value.substring(0, this.value.indexOf(",")));
+    		}
+            
     		$("#nonVeg").scope().restaurantsList();
     	}
     })

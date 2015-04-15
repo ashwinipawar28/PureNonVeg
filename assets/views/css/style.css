@@ -149,7 +149,7 @@ header{
   position: relative;
   margin-top:-70px;
  /* top: -260px;*/
-  z-index: 1111;
+  z-index: 100;
 }.discover-sec p{
 	text-align:center;
 	font-size:18px;

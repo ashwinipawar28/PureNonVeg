@@ -35,11 +35,11 @@
 angular.module( "ngAutocomplete", [])
   .directive('ngAutocomplete', function($parse) {
     return {
-
       scope: {
         details: '=',
         ngAutocomplete: '=',
-        options: '='
+        options: '=',
+        restaurants: '='
       },
 
       link: function(scope, element, attrs, model) {
@@ -70,22 +70,27 @@ angular.module( "ngAutocomplete", [])
         //create new autocomplete
         //reinitializes on every change of the options provided
         var newAutocomplete = function() {
-        	var text;
-          scope.gPlace = new google.maps.places.Autocomplete(element[0], opts);
-          google.maps.event.addListener(scope.gPlace, 'place_changed', function() {
-            scope.$apply(function() {
-            	localStorage.clear();
-            	if (scope.gPlace.getPlace().address_components) {
-            		text = scope.gPlace.getPlace().address_components[0].long_name;
-            	} else {
-            		text = scope.gPlace.getPlace().name;
-            	}
-            	localStorage.setItem("searchtext", text);
-                scope.details = scope.gPlace.getPlace();
-              scope.ngAutocomplete = element.val();
-              element.focus();
-            });
-          })
+        	element.autocomplete({
+                source: function (request, response) {
+                    var re = $.ui.autocomplete.escapeRegex(request.term);
+                    response($.grep(($.map(scope.restaurants, function (v, i) {
+
+                        return {
+                            value: v.name +", "+v.address + ", "+v.zip,
+                        };
+                    })), function (item) {
+                    	if (item.value.toLowerCase().indexOf(re.toLowerCase()) < 0)
+                    		return false;
+                        return true;
+                    }))
+
+                },
+                select: function(event, ui) {
+                	localStorage.clear();
+                    localStorage.setItem("searchtext", ui.item.value.substring(0, ui.item.value.indexOf(",")));
+                  
+                },
+            });	
         }
         newAutocomplete()
 

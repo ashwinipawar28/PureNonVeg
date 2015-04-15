@@ -12,7 +12,8 @@ app.factory("LocationService", function() {
 	  "ratings": "4.0",
 	  "reviews": "24",
 	  "photos" : "50",
-	  "zip" : 411045
+	  "zip" : 411045,
+	  "label" : "Minus 18 Degrees, 273/5, Baner Main Road, Opposite Aman Honda Showroom, 411045"
 	  },
 	  
 	    {"id": 102,
@@ -24,7 +25,8 @@ app.factory("LocationService", function() {
 	  "ratings": "4.0",
 	  "reviews": "24",
 	  "photos" : "50",
-	  "zip" : 411045
+	  "zip" : 411045,
+	  "label" : "Minus 18 Degrees, 273/5, Baner Main Road, Opposite Aman Honda Showroom, 411045"
 	  },
 	  
 	    {"id": 101,
@@ -36,7 +38,8 @@ app.factory("LocationService", function() {
 	  "ratings": "4.0",
 	  "reviews": "24",
 	  "photos" : "50",
-	  "zip" : 411045
+	  "zip" : 411045,
+	  "label" : "Minus 18 Degrees, 273/5, Baner Main Road, Opposite Aman Honda Showroom, 411045"
 	  },
 	  
 	    {"id": 101,
@@ -48,7 +51,8 @@ app.factory("LocationService", function() {
 	  "ratings": "4.0",
 	  "reviews": "24",
 	  "photos" : "50",
-	  "zip" : 411045
+	  "zip" : 411045,
+	  "label" : "Minus 18 Degrees, 273/5, Baner Main Road, Opposite Aman Honda Showroom, 411045"
 	  },
 	  
 	    {"id": 101,
@@ -60,7 +64,8 @@ app.factory("LocationService", function() {
 	  "ratings": "4.0",
 	  "reviews": "24",
 	  "photos" : "50",
-	  "zip" : 411045
+	  "zip" : 411045,
+	  "label" : "Minus 18 Degrees, 273/5, Baner Main Road, Opposite Aman Honda Showroom, 411045"
 	  }];
 
   return {
