@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nonVegApp">
+<head>
+  <meta charset="utf-8">
+  <title>Pure Non Veg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/inner-pg.css" rel="stylesheet">
+    <link href="css/csv.css" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+	<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="css/style-sldr.css" />
+
+<link rel="stylesheet" href="css/font-awesome.css">
+<script type="text/javascript" src="../app/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="../app/js/modernizr.custom.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<style>
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+
+</style>
+	
+</head>
+
+<body>
+<div class="wrapper">
+	<header>
+    	<div class="container">
+  			<div class="row">
+            	<div class="col-lg-6 col-sm-6 col-xs-6">
+                	<div class="logo-txt">
+                     	<a href="#"><img src="img/logo.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6">
+                	
+                     <nav class="menu-opener">
+                        <div class="menu-opener-inner"></div>
+                      </nav>
+                      <nav class="menu">
+                        <ul class="menu-inner1">
+                      		
+                          <a href="#" class="col-lg-3">
+                            <li class="active1">Home</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Order</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Sign Up</li>
+                          </a>
+                          <a href="#" class="col-lg-3">
+                            <li>Sign In</li>
+                          </a>
+                         </ul>
+                      </nav>
+                </div>
+            </div>
+ 		</div>
+    </header>
+    
+   </div>
+
+<div  class="login-pg">
+<h2>Enter Restaurant data and Menu</h2>
+<div ng-controller="adminController">
+    <button type="button" ng-csv="data" filename="restaurant.csv">Export Restaurant template</button>
+    <button type="button" ng-csv="menu_data" filename="menu.csv">Export Menu template</button>
+    <ng-csv-import 
+		class="import"
+		content="csv.content"
+		result="csv.result"></ng-csv-import>
+	<div ng-if="csv.content" class="block left">
+    <h2>CSV</h2>
+    <div class="content"><pre>{{ csv.content }}</pre></div>
+</div>
+</div>
+
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-sanitize.js"></script>
+	<script src="../app/app.js"></script>
+	<script src="../app/js/ngAutocomplete.js"></script>
+	<script src="../app/js/ng-csv.js"></script>
+	<script src="../app/services/csv-service.js"></script>
+	<script src="../app/controllers/adminController.js"></script>
+	<script src="../app/js/angular-csv-import.js"></script>
+	<script src="../app/js/angular-csv-import.min.js"></script>
+	<script>
+		
+	</script>
+
+</body>
+</html>

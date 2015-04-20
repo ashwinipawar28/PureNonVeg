@@ -1,2 +1,2 @@
-var app = angular.module( "nonVegApp", ['ngAutocomplete']);
+var app = angular.module( "nonVegApp", ['ngAutocomplete','ngSanitize', 'ngCsv', 'ngCsvImport']);
 
