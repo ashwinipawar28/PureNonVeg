@@ -228,7 +228,7 @@
                 <div class="col-lg-8 bor-both">
                     <div class="rest-list-div" id="custom_scroll">
                       <div class="rest-link" ng-repeat="restaurant in restaurants | filter: search">
-                        <div class="col-lg-9 col-sm-9">                            
+                        <div class="col-lg-9 col-sm-9">                      
                             <a href="#"><img src={{restaurant.image_name}} alt="" /></a>
                             
                             <a href="#"><h2>{{restaurant.name}}</h2></a>
@@ -462,7 +462,10 @@
 <script type="text/javascript" src="../app/js/script.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.js"></script>
 <script src="../app/app.js"></script>
-<script src="../app/js/ngAutocomplete.js"></script>
+<script src="../app/directives/ngAutocomplete.js"></script>
+<script src="../app/directives/ng-csv.js"></script>
+<script src="../app/directives/angular-csv-import.js"></script>
+<script src="../app/directives/angular-csv-import.min.js"></script>
 <script src="../app/services/searchService.js"></script>
 <script src="../app/controllers/searchController.js"></script>
 <script type="text/javascript" src="../app/js/jquery.nicescroll.min.js"></script>

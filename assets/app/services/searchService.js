@@ -2,7 +2,7 @@
  * 
  */
 
-app.factory("LocationService", function() {
+app.factory("LocationService",['$http', function($http) {
   var locations = [{"id": 101,
 	  "image_name": "img/rest-1.png",
 	  "name": "Minus 18 Degrees",
@@ -70,10 +70,10 @@ app.factory("LocationService", function() {
 
   return {
     allLocations: function() {
-      return locations;
+      return  $http.get("http://private-5dbfc-purenonveg.apiary-mock.com/restuarant/id");
     },
     first: function() {
       return users[0];
     }
   };
-});
+}]);
