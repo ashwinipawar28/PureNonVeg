@@ -70,12 +70,10 @@ angular.module( "ngAutocomplete", [])
         //create new autocomplete
         //reinitializes on every change of the options provided
         var newAutocomplete = function() {
-        	debugger
         	element.autocomplete({
                 source: function (request, response) {
                     var re = $.ui.autocomplete.escapeRegex(request.term);
                     response($.grep(($.map(scope.restaurants, function (v, i) {
-                    		debugger
                         return {
                             value: v.name +", "+v.address,
                         };
