@@ -27,7 +27,8 @@ PureNonVeg is a simple API allowing consumers to manage, search and order food o
 ### Get Restuarant Menu [GET]
 
 + Response 200 (application/json)
-[
+
+       [
             {
                 "menu_item_type" : "Breakfast",
                 "menu_item_id"   : "1",
