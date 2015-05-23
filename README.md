@@ -28,7 +28,7 @@ PureNonVeg is a simple API allowing consumers to manage, search and order food o
 
 + Response 200 (application/json)
 
-       [
+       ```[
             {
                 "menu_item_type" : "Breakfast",
                 "menu_item_id"   : "1",
@@ -94,7 +94,7 @@ PureNonVeg is a simple API allowing consumers to manage, search and order food o
                 ]
             }
         ]
-        
+       ``` 
         
 
         
