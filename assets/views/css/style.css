@@ -18,7 +18,7 @@ and (max-device-width : 480px) {
 	.lazy-bones-sec p{margin-top:0px !important;}
 	.social{max-width:248px !important;}
 	.order-wrap h1{font-size:22px !important;padding: 19px 10px !important;}
-	textarea{width:81% !important; font-size:12px !important; padding:0px !important;}
+	.order-contain textarea{width:81% !important; font-size:12px !important; padding:0px !important;}
 	#wowslider-container1 .ws-title div,#wowslider-container1 .ws-title span{font-size:18px !important;}
 	#wowslider-container1 .ws-title{bottom:40% !important; left:65% !important;}
 input[type="submit"] {
@@ -149,7 +149,7 @@ header{
   position: relative;
   margin-top:-70px;
  /* top: -260px;*/
-  z-index: 100;
+  z-index: 1111;
 }.discover-sec p{
 	text-align:center;
 	font-size:18px;
